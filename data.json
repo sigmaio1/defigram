@@ -1,0 +1,873 @@
+{
+  "users": {
+    "121212": {
+      "password": "0ffe1abd1a08215353c233d6e009613e95eec4253832a761af28ff37ac5a150c",
+      "stars": 1050,
+      "gifts": 14,
+      "nfts": [
+        {
+          "name": "Кольцо",
+          "emoji": "💍",
+          "rarity": "legendary",
+          "id": "07C2C71D",
+          "from": "sergei",
+          "date": "2026-09-27T15:14:52.184Z"
+        },
+        {
+          "name": "Кольцо",
+          "emoji": "💍",
+          "rarity": "legendary",
+          "id": "28BC22F7",
+          "from": "sergei",
+          "date": "2026-09-27T15:15:03.053Z"
+        },
+        {
+          "name": "Кольцо",
+          "emoji": "💍",
+          "rarity": "legendary",
+          "id": "1D320C79",
+          "from": "sergei",
+          "date": "2026-09-27T15:15:04.509Z"
+        },
+        {
+          "name": "Сердце",
+          "emoji": "💖",
+          "rarity": "common",
+          "id": "AB841164",
+          "from": "sergei",
+          "date": "2026-09-27T15:15:06.414Z"
+        },
+        {
+          "name": "Кольцо",
+          "emoji": "💍",
+          "rarity": "legendary",
+          "id": "D76C9E89",
+          "from": "sergei",
+          "date": "2026-09-27T15:15:11.909Z"
+        },
+        {
+          "name": "Кольцо",
+          "emoji": "💍",
+          "rarity": "legendary",
+          "id": "0F41F739",
+          "from": "sergei",
+          "date": "2026-09-27T15:15:13.133Z"
+        },
+        {
+          "name": "Ракета",
+          "emoji": "🚀",
+          "rarity": "rare",
+          "id": "EB444279",
+          "from": "sergei",
+          "date": "2026-09-27T15:19:12.060Z"
+        },
+        {
+          "name": "Кольцо",
+          "emoji": "💍",
+          "rarity": "legendary",
+          "id": "A189C4F4",
+          "from": "sergei",
+          "date": "2026-09-27T15:40:03.348Z"
+        },
+        {
+          "name": "Кольцо",
+          "emoji": "💍",
+          "rarity": "legendary",
+          "id": "CF9E31BA",
+          "from": "sergei",
+          "date": "2026-09-27T15:40:15.398Z"
+        },
+        {
+          "name": "Кольцо",
+          "emoji": "💍",
+          "rarity": "legendary",
+          "id": "13A19AA1",
+          "from": "+888-888-888-888",
+          "date": "2026-09-29T16:15:16.511Z"
+        },
+        {
+          "name": "Кольцо",
+          "emoji": "💍",
+          "rarity": "legendary",
+          "id": "07FC96F0",
+          "from": "+888-888-888-888",
+          "date": "2026-09-29T16:15:28.415Z"
+        },
+        {
+          "name": "Кубок",
+          "emoji": "🏆",
+          "rarity": "epic",
+          "id": "825A0820",
+          "from": "+888-888-888-888",
+          "date": "2026-09-29T16:15:30.817Z"
+        },
+        {
+          "name": "Роза в стекле",
+          "emoji": "🌹",
+          "price": 10000,
+          "rarity": "legendary",
+          "id": "4BD687E7",
+          "from": "+888-888-888-888",
+          "date": "2026-09-30T18:54:54.443Z"
+        },
+        {
+          "name": "Роза в стекле",
+          "emoji": "🌹",
+          "price": 10000,
+          "rarity": "legendary",
+          "id": "19CC5273",
+          "from": "+888-888-888-888",
+          "date": "2026-09-30T18:56:00.222Z"
+        }
+      ]
+    },
+    "sergei": {
+      "password": "0ffe1abd1a08215353c233d6e009613e95eec4253832a761af28ff37ac5a150c",
+      "stars": 435,
+      "gifts": 20,
+      "lastSeen": "2026-09-27T15:39:47.847Z",
+      "avatarColor": "#e63946",
+      "nfts": [
+        {
+          "name": "Кольцо",
+          "emoji": "💍",
+          "id": "676FCE61",
+          "from": "+888-888-888-888",
+          "date": "2026-09-30T16:23:36.427Z"
+        }
+      ]
+    },
+    "+888-888-888-888": {
+      "password": "0ffe1abd1a08215353c233d6e009613e95eec4253832a761af28ff37ac5a150c",
+      "stars": 20000127280,
+      "gifts": 4,
+      "avatarColor": "#f5c542",
+      "registered": "2026-09-29T16:15:05.308Z",
+      "lastSeen": "2026-09-30T18:54:20.395Z",
+      "isOwner": true,
+      "verified": true,
+      "username": "",
+      "bio": "",
+      "birthday": "",
+      "nfts": [
+        {
+          "name": "Сердце",
+          "emoji": "💖",
+          "price": 15,
+          "rarity": "common",
+          "id": "528C6CA8",
+          "from": "+888-111-111-111",
+          "date": "2026-09-30T16:41:53.389Z"
+        },
+        {
+          "name": "Пиво",
+          "emoji": "🍺",
+          "price": 50,
+          "rarity": "rare",
+          "id": "068DFB05",
+          "from": "+888-111-111-111",
+          "date": "2026-09-30T16:42:00.749Z"
+        },
+        {
+          "name": "Статуя Свободы",
+          "emoji": "🗽",
+          "price": 150,
+          "rarity": "epic",
+          "id": "8582E151",
+          "from": "+888-111-111-111",
+          "date": "2026-09-30T16:42:30.641Z"
+        },
+        {
+          "name": "Сердце",
+          "emoji": "💖",
+          "price": 15,
+          "rarity": "common",
+          "id": "C6C29116",
+          "from": "+571111111111",
+          "date": "2026-10-01T17:29:16.250Z"
+        }
+      ]
+    },
+    "+888-111-111-111": {
+      "password": "0ffe1abd1a08215353c233d6e009613e95eec4253832a761af28ff37ac5a150c",
+      "username": "",
+      "bio": "",
+      "birthday": "",
+      "stars": 149885,
+      "gifts": 4,
+      "nfts": [
+        {
+          "name": "Единорог",
+          "emoji": "🦄",
+          "price": 500,
+          "rarity": "legendary",
+          "id": "A4CC318F",
+          "from": "+888-888-888-888",
+          "date": "2026-09-30T16:43:18.056Z"
+        },
+        {
+          "name": "Единорог",
+          "emoji": "🦄",
+          "price": 500,
+          "rarity": "legendary",
+          "id": "3D9E3816",
+          "from": "+888-888-888-888",
+          "date": "2026-09-30T16:43:20.615Z"
+        },
+        {
+          "name": "Единорог",
+          "emoji": "🦄",
+          "price": 500,
+          "rarity": "legendary",
+          "id": "AB6CE5A4",
+          "from": "+888-888-888-888",
+          "date": "2026-09-30T16:43:27.982Z"
+        },
+        {
+          "name": "Единорог",
+          "emoji": "🦄",
+          "price": 500,
+          "rarity": "legendary",
+          "id": "B36D136A",
+          "from": "+888-888-888-888",
+          "date": "2026-09-30T16:43:51.352Z"
+        }
+      ],
+      "avatarColor": "#f5a623",
+      "registered": "2026-09-30T16:41:45.157Z",
+      "lastSeen": "2026-09-30T16:42:52.504Z",
+      "isOwner": false,
+      "verified": false
+    },
+    "+571111111111": {
+      "password": "0ffe1abd1a08215353c233d6e009613e95eec4253832a761af28ff37ac5a150c",
+      "username": "",
+      "bio": "",
+      "birthday": "",
+      "stars": 85,
+      "gifts": 0,
+      "nfts": [],
+      "avatarColor": "#5288c1",
+      "registered": "2026-10-01T17:28:57.794Z",
+      "lastSeen": "2026-10-01T17:28:57.795Z",
+      "isOwner": false,
+      "verified": false
+    }
+  },
+  "messages": [
+    {
+      "sender": "121212",
+      "receiver": "sergei",
+      "text": "привет",
+      "time": "17:51",
+      "date": "2026-09-27T14:51:59.912Z"
+    },
+    {
+      "sender": "121212",
+      "receiver": "sergei",
+      "text": "🎁 Отправил подарок!",
+      "time": "17:52",
+      "date": "2026-09-27T14:52:05.842Z"
+    },
+    {
+      "sender": "121212",
+      "receiver": "sergei",
+      "text": "🎁 Отправил подарок!",
+      "time": "17:52",
+      "date": "2026-09-27T14:52:06.426Z"
+    },
+    {
+      "sender": "121212",
+      "receiver": "sergei",
+      "text": "🎁 Отправил подарок!",
+      "time": "17:52",
+      "date": "2026-09-27T14:52:21.554Z"
+    },
+    {
+      "sender": "121212",
+      "receiver": "sergei",
+      "text": "🎁 Отправил подарок!",
+      "time": "17:52",
+      "date": "2026-09-27T14:52:21.723Z"
+    },
+    {
+      "sender": "121212",
+      "receiver": "sergei",
+      "text": "🎁 Отправил подарок!",
+      "time": "17:52",
+      "date": "2026-09-27T14:52:21.891Z"
+    },
+    {
+      "sender": "121212",
+      "receiver": "sergei",
+      "text": "🎁 Отправил подарок!",
+      "time": "17:52",
+      "date": "2026-09-27T14:52:22.066Z"
+    },
+    {
+      "sender": "121212",
+      "receiver": "sergei",
+      "text": "🎁 Отправил подарок!",
+      "time": "17:52",
+      "date": "2026-09-27T14:52:22.235Z"
+    },
+    {
+      "sender": "121212",
+      "receiver": "sergei",
+      "text": "🎁 Отправил подарок!",
+      "time": "17:52",
+      "date": "2026-09-27T14:52:22.403Z"
+    },
+    {
+      "sender": "121212",
+      "receiver": "sergei",
+      "text": "🎁 Отправил подарок!",
+      "time": "17:52",
+      "date": "2026-09-27T14:52:22.602Z"
+    },
+    {
+      "sender": "121212",
+      "receiver": "sergei",
+      "text": "🎁 Отправил подарок!",
+      "time": "17:52",
+      "date": "2026-09-27T14:52:22.786Z"
+    },
+    {
+      "sender": "121212",
+      "receiver": "sergei",
+      "text": "🎁 Отправил подарок!",
+      "time": "17:52",
+      "date": "2026-09-27T14:52:22.970Z"
+    },
+    {
+      "sender": "121212",
+      "receiver": "sergei",
+      "text": "🎁 Отправил подарок!",
+      "time": "17:52",
+      "date": "2026-09-27T14:52:23.164Z"
+    },
+    {
+      "sender": "121212",
+      "receiver": "sergei",
+      "text": "🎁 Отправил подарок!",
+      "time": "17:52",
+      "date": "2026-09-27T14:52:23.339Z"
+    },
+    {
+      "sender": "121212",
+      "receiver": "sergei",
+      "text": "🎁 Отправил подарок!",
+      "time": "17:52",
+      "date": "2026-09-27T14:52:23.507Z"
+    },
+    {
+      "sender": "121212",
+      "receiver": "sergei",
+      "text": "🎁 Отправил подарок!",
+      "time": "17:52",
+      "date": "2026-09-27T14:52:23.699Z"
+    },
+    {
+      "sender": "121212",
+      "receiver": "sergei",
+      "text": "🎁 Отправил подарок!",
+      "time": "17:52",
+      "date": "2026-09-27T14:52:23.875Z"
+    },
+    {
+      "sender": "121212",
+      "receiver": "sergei",
+      "text": "🎁 Отправил подарок!",
+      "time": "17:52",
+      "date": "2026-09-27T14:52:24.059Z"
+    },
+    {
+      "sender": "121212",
+      "receiver": "sergei",
+      "text": "🎁 Отправил подарок!",
+      "time": "17:52",
+      "date": "2026-09-27T14:52:24.221Z"
+    },
+    {
+      "sender": "121212",
+      "receiver": "sergei",
+      "text": "🎁 Отправил подарок!",
+      "time": "17:52",
+      "date": "2026-09-27T14:52:24.372Z",
+      "reactions": [
+        {
+          "emoji": "❤️",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "sender": "sergei",
+      "receiver": "121212",
+      "text": "> 🎁 Отправил подарок! jjj",
+      "time": "18:14",
+      "date": "2026-09-27T15:14:41.970Z",
+      "reactions": []
+    },
+    {
+      "sender": "sergei",
+      "receiver": "121212",
+      "text": "🎁 NFT-подарок: 💍 Кольцо (#07C2C71D, legendary)",
+      "time": "18:14",
+      "date": "2026-09-27T15:14:52.184Z",
+      "reactions": []
+    },
+    {
+      "sender": "sergei",
+      "receiver": "121212",
+      "text": "🎁 NFT-подарок: 💍 Кольцо (#28BC22F7, legendary)",
+      "time": "18:15",
+      "date": "2026-09-27T15:15:03.053Z",
+      "reactions": []
+    },
+    {
+      "sender": "sergei",
+      "receiver": "121212",
+      "text": "🎁 NFT-подарок: 💍 Кольцо (#1D320C79, legendary)",
+      "time": "18:15",
+      "date": "2026-09-27T15:15:04.509Z",
+      "reactions": []
+    },
+    {
+      "sender": "sergei",
+      "receiver": "121212",
+      "text": "🎁 NFT-подарок: 💖 Сердце (#AB841164, common)",
+      "time": "18:15",
+      "date": "2026-09-27T15:15:06.414Z",
+      "reactions": []
+    },
+    {
+      "sender": "sergei",
+      "receiver": "121212",
+      "text": "🎁 NFT-подарок: 💍 Кольцо (#D76C9E89, legendary)",
+      "time": "18:15",
+      "date": "2026-09-27T15:15:11.909Z",
+      "reactions": []
+    },
+    {
+      "sender": "sergei",
+      "receiver": "121212",
+      "text": "🎁 NFT-подарок: 💍 Кольцо (#0F41F739, legendary)",
+      "time": "18:15",
+      "date": "2026-09-27T15:15:13.133Z",
+      "reactions": []
+    },
+    {
+      "sender": "sergei",
+      "receiver": "121212",
+      "text": "🎁 NFT-подарок: 🚀 Ракета (#EB444279, rare)",
+      "time": "18:19",
+      "date": "2026-09-27T15:19:12.060Z",
+      "reactions": []
+    },
+    {
+      "sender": "sergei",
+      "receiver": "121212",
+      "text": "🎁 NFT-подарок: 💍 Кольцо (#A189C4F4, legendary)",
+      "time": "18:40",
+      "date": "2026-09-27T15:40:03.348Z",
+      "reactions": []
+    },
+    {
+      "sender": "sergei",
+      "receiver": "121212",
+      "text": "🎁 NFT-подарок: 💍 Кольцо (#CF9E31BA, legendary)",
+      "time": "18:40",
+      "date": "2026-09-27T15:40:15.398Z",
+      "reactions": []
+    },
+    {
+      "sender": "sergei",
+      "receiver": "121212",
+      "text": "1",
+      "time": "18:40",
+      "date": "2026-09-27T15:40:28.025Z",
+      "reactions": []
+    },
+    {
+      "sender": "sergei",
+      "receiver": "121212",
+      "text": "<code></code><code>fff</code>",
+      "time": "18:40",
+      "date": "2026-09-27T15:40:34.899Z",
+      "reactions": []
+    },
+    {
+      "sender": "sergei",
+      "receiver": "121212",
+      "text": "<b></b>aaaa",
+      "time": "18:40",
+      "date": "2026-09-27T15:40:38.905Z",
+      "reactions": []
+    },
+    {
+      "sender": "sergei",
+      "receiver": "121212",
+      "text": "<b></b><b>aa</b>",
+      "time": "18:40",
+      "date": "2026-09-27T15:40:42.506Z",
+      "reactions": []
+    },
+    {
+      "sender": "sergei",
+      "receiver": "121212",
+      "text": "<b></b><i>aaa</i>a<i></i>a",
+      "time": "18:40",
+      "date": "2026-09-27T15:40:47.346Z",
+      "reactions": []
+    },
+    {
+      "sender": "sergei",
+      "receiver": "121212",
+      "text": "<b></b><b></b><b></b>aa",
+      "time": "18:40",
+      "date": "2026-09-27T15:40:51.123Z",
+      "reactions": []
+    },
+    {
+      "sender": "sergei",
+      "receiver": "121212",
+      "text": "<s><code></code></s>dfdfdf",
+      "time": "18:40",
+      "date": "2026-09-27T15:40:55.777Z",
+      "reactions": []
+    },
+    {
+      "sender": "sergei",
+      "receiver": "121212",
+      "text": "<s></s>f<s>fgfg</s>fg",
+      "time": "18:41",
+      "date": "2026-09-27T15:41:00.001Z",
+      "reactions": []
+    },
+    {
+      "sender": "sergei",
+      "receiver": "121212",
+      "text": "<s></s><s>dffgfgfgfg</s>",
+      "time": "18:41",
+      "date": "2026-09-27T15:41:04.637Z",
+      "reactions": []
+    },
+    {
+      "sender": "sergei",
+      "receiver": "121212",
+      "text": "> > fff",
+      "time": "18:41",
+      "date": "2026-09-27T15:41:09.610Z",
+      "reactions": []
+    },
+    {
+      "sender": "sergei",
+      "receiver": "121212",
+      "text": "> > > > > fffff",
+      "time": "18:41",
+      "date": "2026-09-27T15:41:16.920Z",
+      "reactions": []
+    },
+    {
+      "sender": "sergei",
+      "receiver": "121212",
+      "text": "✨ привет (улучшено AI)",
+      "time": "18:41",
+      "date": "2026-09-27T15:41:28.966Z",
+      "reactions": []
+    },
+    {
+      "sender": "+888-888-888-888",
+      "receiver": "121212",
+      "text": "🎁 NFT-подарок: 💍 Кольцо (#13A19AA1)",
+      "time": "19:15",
+      "date": "2026-09-29T16:15:16.511Z",
+      "reactions": [],
+      "read": false
+    },
+    {
+      "sender": "+888-888-888-888",
+      "receiver": "121212",
+      "text": "🎁 NFT-подарок: 💍 Кольцо (#07FC96F0)",
+      "time": "19:15",
+      "date": "2026-09-29T16:15:28.415Z",
+      "reactions": [],
+      "read": false
+    },
+    {
+      "sender": "+888-888-888-888",
+      "receiver": "121212",
+      "text": "🎁 NFT-подарок: 🏆 Кубок (#825A0820)",
+      "time": "19:15",
+      "date": "2026-09-29T16:15:30.817Z",
+      "reactions": [],
+      "read": false
+    },
+    {
+      "sender": "+888-888-888-888",
+      "receiver": "121212",
+      "text": "🎤 Голосовое сообщение 00:02",
+      "time": "19:15",
+      "date": "2026-09-29T16:15:52.701Z",
+      "reactions": [],
+      "read": false
+    },
+    {
+      "sender": "+888-888-888-888",
+      "receiver": "121212",
+      "text": "😂",
+      "time": "19:15",
+      "date": "2026-09-29T16:15:59.701Z",
+      "reactions": [],
+      "read": false
+    },
+    {
+      "sender": "+888-888-888-888",
+      "receiver": "sergei",
+      "text": "привет",
+      "time": "19:16",
+      "date": "2026-09-29T16:16:59.756Z",
+      "reactions": [],
+      "read": false
+    },
+    {
+      "sender": "+888-888-888-888",
+      "receiver": "sergei",
+      "text": "првиет",
+      "time": "19:23",
+      "date": "2026-09-30T16:23:31.179Z",
+      "read": false
+    },
+    {
+      "sender": "+888-888-888-888",
+      "receiver": "sergei",
+      "text": "как дела",
+      "time": "19:23",
+      "date": "2026-09-30T16:23:34.015Z",
+      "read": false
+    },
+    {
+      "sender": "+888-888-888-888",
+      "receiver": "sergei",
+      "text": "🎁 Подарок: 💍 Кольцо (#676FCE61)",
+      "time": "19:23",
+      "date": "2026-09-30T16:23:36.427Z",
+      "read": false
+    },
+    {
+      "sender": "+888-111-111-111",
+      "receiver": "+888-888-888-888",
+      "type": "gift",
+      "giftEmoji": "💖",
+      "giftName": "Сердце",
+      "giftPrice": 15,
+      "giftRarity": "common",
+      "giftId": "528C6CA8",
+      "time": "19:41",
+      "date": "2026-09-30T16:41:53.389Z",
+      "read": true
+    },
+    {
+      "sender": "+888-111-111-111",
+      "receiver": "+888-888-888-888",
+      "type": "gift",
+      "giftEmoji": "🍺",
+      "giftName": "Пиво",
+      "giftPrice": 50,
+      "giftRarity": "rare",
+      "giftId": "068DFB05",
+      "time": "19:42",
+      "date": "2026-09-30T16:42:00.749Z",
+      "read": true
+    },
+    {
+      "sender": "+888-111-111-111",
+      "receiver": "+888-888-888-888",
+      "type": "gift",
+      "giftEmoji": "🗽",
+      "giftName": "Статуя Свободы",
+      "giftPrice": 150,
+      "giftRarity": "epic",
+      "giftId": "8582E151",
+      "time": "19:42",
+      "date": "2026-09-30T16:42:30.641Z",
+      "read": true
+    },
+    {
+      "sender": "+888-888-888-888",
+      "receiver": "+888-111-111-111",
+      "type": "gift",
+      "giftEmoji": "🦄",
+      "giftName": "Единорог",
+      "giftPrice": 500,
+      "giftRarity": "legendary",
+      "giftId": "A4CC318F",
+      "time": "19:43",
+      "date": "2026-09-30T16:43:18.056Z",
+      "read": false
+    },
+    {
+      "sender": "+888-888-888-888",
+      "receiver": "+888-111-111-111",
+      "type": "gift",
+      "giftEmoji": "🦄",
+      "giftName": "Единорог",
+      "giftPrice": 500,
+      "giftRarity": "legendary",
+      "giftId": "3D9E3816",
+      "time": "19:43",
+      "date": "2026-09-30T16:43:20.615Z",
+      "read": false
+    },
+    {
+      "sender": "+888-888-888-888",
+      "receiver": "+888-111-111-111",
+      "type": "gift",
+      "giftEmoji": "🦄",
+      "giftName": "Единорог",
+      "giftPrice": 500,
+      "giftRarity": "legendary",
+      "giftId": "AB6CE5A4",
+      "time": "19:43",
+      "date": "2026-09-30T16:43:27.982Z",
+      "read": false
+    },
+    {
+      "sender": "+888-888-888-888",
+      "receiver": "+888-111-111-111",
+      "type": "gift",
+      "giftEmoji": "🦄",
+      "giftName": "Единорог",
+      "giftPrice": 500,
+      "giftRarity": "legendary",
+      "giftId": "B36D136A",
+      "time": "19:43",
+      "date": "2026-09-30T16:43:51.352Z",
+      "read": false
+    },
+    {
+      "sender": "+888-888-888-888",
+      "receiver": "+888-111-111-111",
+      "text": "🎤 Голосовое 00:01",
+      "time": "19:44",
+      "date": "2026-09-30T16:44:09.266Z",
+      "read": false
+    },
+    {
+      "sender": "+888-888-888-888",
+      "receiver": "121212",
+      "type": "gift",
+      "giftEmoji": "🌹",
+      "giftName": "Роза в стекле",
+      "giftPrice": 10000,
+      "giftRarity": "legendary",
+      "giftId": "4BD687E7",
+      "time": "21:54",
+      "date": "2026-09-30T18:54:54.443Z",
+      "read": false
+    },
+    {
+      "sender": "+888-888-888-888",
+      "receiver": "121212",
+      "type": "gift",
+      "giftEmoji": "🌹",
+      "giftName": "Роза в стекле",
+      "giftPrice": 10000,
+      "giftRarity": "legendary",
+      "giftId": "19CC5273",
+      "time": "21:56",
+      "date": "2026-09-30T18:56:00.222Z",
+      "read": false
+    },
+    {
+      "sender": "+571111111111",
+      "receiver": "+888-888-888-888",
+      "type": "gift",
+      "giftEmoji": "💖",
+      "giftName": "Сердце",
+      "giftPrice": 15,
+      "giftRarity": "common",
+      "giftId": "C6C29116",
+      "time": "20:29",
+      "date": "2026-10-01T17:29:16.250Z",
+      "read": false
+    }
+  ],
+  "nfts": [],
+  "groups": {},
+  "channels": {},
+  "starsHistory": {
+    "+888-888-888-888": [
+      {
+        "title": "Покупка 150000 звёзд",
+        "amount": 150000,
+        "date": "2026-09-30T16:22:49.681Z"
+      },
+      {
+        "title": "Подарок Кольцо",
+        "amount": -200,
+        "date": "2026-09-30T16:23:36.427Z"
+      },
+      {
+        "title": "Подарок \"Единорог\" для +888-111-111-111",
+        "amount": -500,
+        "date": "2026-09-30T16:43:18.056Z"
+      },
+      {
+        "title": "Подарок \"Единорог\" для +888-111-111-111",
+        "amount": -500,
+        "date": "2026-09-30T16:43:20.615Z"
+      },
+      {
+        "title": "Подарок \"Единорог\" для +888-111-111-111",
+        "amount": -500,
+        "date": "2026-09-30T16:43:27.982Z"
+      },
+      {
+        "title": "Подарок \"Единорог\" для +888-111-111-111",
+        "amount": -500,
+        "date": "2026-09-30T16:43:51.352Z"
+      },
+      {
+        "title": "Подарок \"Роза в стекле\" для 121212",
+        "amount": -10000,
+        "date": "2026-09-30T18:54:54.443Z"
+      },
+      {
+        "title": "Подарок \"Роза в стекле\" для 121212",
+        "amount": -10000,
+        "date": "2026-09-30T18:56:00.222Z"
+      }
+    ],
+    "+888-111-111-111": [
+      {
+        "title": "Подарок \"Сердце\" для +888-888-888-888",
+        "amount": -15,
+        "date": "2026-09-30T16:41:53.389Z"
+      },
+      {
+        "title": "Подарок \"Пиво\" для +888-888-888-888",
+        "amount": -50,
+        "date": "2026-09-30T16:42:00.749Z"
+      },
+      {
+        "title": "Покупка 150000 звёзд",
+        "amount": 150000,
+        "date": "2026-09-30T16:42:16.277Z"
+      },
+      {
+        "title": "Подарок \"Статуя Свободы\" для +888-888-888-888",
+        "amount": -150,
+        "date": "2026-09-30T16:42:30.641Z"
+      }
+    ],
+    "+571111111111": [
+      {
+        "title": "Подарок \"Сердце\" для +888-888-888-888",
+        "amount": -15,
+        "date": "2026-10-01T17:29:16.250Z"
+      }
+    ]
+  }
+}

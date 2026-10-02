@@ -1,0 +1,26 @@
+{
+  "name": "defigram",
+  "version": "0.1.0-beta",
+  "description": "Defigram BETA - Defigram Messenger",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "pack": "electron-packager . Defigram --platform=win32 --arch=x64 --out=dist --overwrite"
+  },
+  "author": "Defigram Team",
+  "license": "MIT",
+  "devDependencies": {
+    "electron-builder": "^24.9.1",
+    "electron-packager": "^17.1.2"
+  },
+  "build": {
+    "publish": null
+    "appId": "com.defigram.app",
+    "productName": "Defigram BETA",
+    "win": {
+      "target": "portable",
+      "sign": false
+    }
+  }
+}

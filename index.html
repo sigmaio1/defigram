@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8"><title>My Telegram</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- АВТОРИЗАЦИЯ -->
+<div class="auth-screen" id="authScreen">
+    <div class="auth-box">
+        <div class="auth-logo">✈️</div>
+        <h1>My Telegram</h1>
+        <p class="auth-sub" id="authSub">Войди по номеру телефона</p>
+        <div class="input-wrap"><input type="tel" id="authPhone" placeholder="+888-XXX-XXX-XXX" class="auth-input" maxlength="17"></div>
+        <div class="input-wrap"><input type="password" id="authPass" placeholder="Пароль" class="auth-input"></div>
+        <div class="input-wrap" id="pass2Wrap" style="display:none;"><input type="password" id="authPass2" placeholder="Повтори пароль" class="auth-input"></div>
+        <div class="auth-error" id="authError"></div>
+        <div class="phone-hint" id="phoneHint"></div>
+        <button class="auth-btn" onclick="doAuth()" id="authBtn">Войти</button>
+        <p class="auth-switch"><span id="switchText">Нет аккаунта?</span> <a href="#" onclick="switchMode(); return false;" id="switchLink">Зарегистрироваться</a></p>
+    </div>
+</div>
+
+<!-- ПРИЛОЖЕНИЕ -->
+<div class="app hidden" id="app">
+
+    <!-- КОЛОНКА ПАПОК -->
+    <div class="folders-col">
+        <div class="folder-icon active" onclick="filterFolder('all', this)"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg><span class="folder-badge" id="badgeAll">0</span></div>
+        <div class="folder-icon" onclick="filterFolder('unread', this)"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div>
+        <div class="folder-icon" onclick="filterFolder('personal', this)"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+        <div class="folder-icon" onclick="filterFolder('groups', this)"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div>
+        <div class="folder-icon" onclick="filterFolder('channels', this)"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg></div>
+        <div class="folder-icon" onclick="openSettings()"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></div>
+    </div>
+
+    <!-- СПИСОК ЧАТОВ -->
+    <div class="chat-list-col">
+        <div class="chat-list-header">
+            <div class="hamburger" onclick="toggleAccountMenu()"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></div>
+            <input type="text" placeholder="Поиск" id="chatSearch" oninput="filterChats()">
+            <div class="header-avatar" id="headerAvatar" onclick="openMyProfile()">?</div>
+        </div>
+        <div class="account-menu" id="accountMenu">
+            <div class="acc-user">
+                <div class="acc-avatar" id="accAvatar">?</div>
+                <div><div class="acc-name" id="accName">—</div><div class="acc-phone" id="accPhone">—</div></div>
+            </div>
+            <div class="acc-item" onclick="openMyProfile()">👤 Мой профиль</div>
+            <div class="acc-item" onclick="openWallet()">💰 Кошелёк</div>
+            <div class="acc-item" onclick="openNewChat()">👥 Создать группу</div>
+            <div class="acc-item" onclick="openNewChannel()">📢 Создать канал</div>
+            <div class="acc-item" onclick="alert('Контакты')">📞 Контакты</div>
+            <div class="acc-item" onclick="openSettings()">⚙️ Настройки</div>
+            <div class="acc-item logout" onclick="logout()">🚪 Выйти</div>
+        </div>
+        <div class="stories-bar" id="storiesBar"></div>
+        <div class="chat-list" id="chatList"></div>
+    </div>
+
+    <!-- ОСНОВНОЙ ЧАТ -->
+    <div class="main-chat" id="mainChat">
+        <div class="empty-chat" id="emptyChat"><div class="empty-text">Выберите, кому хотели бы написать</div></div>
+        <div class="chat-view hidden" id="chatView">
+            <div class="chat-view-header">
+                <div class="chat-view-left" onclick="openProfile(currentChat)">
+                    <div class="chat-view-avatar" id="chatViewAvatar">?</div>
+                    <div><div class="chat-view-name" id="chatViewName">—</div><div class="chat-view-status" id="chatViewStatus">—</div></div>
+                </div>
+                <div class="chat-view-right">
+                    <button class="ch-icon" onclick="toggleSearch()">🔍</button>
+                    <button class="ch-icon" onclick="startCall()">📞</button>
+                    <button class="ch-icon" onclick="toggleRightPanel()">📋</button>
+                    <button class="ch-icon" onclick="alert('Ещё')">⋮</button>
+                </div>
+            </div>
+            <div class="message-search hidden" id="messageSearch">
+                <input type="text" placeholder="Поиск по сообщениям..." id="msgSearchInput" oninput="searchMessages()">
+                <span onclick="toggleSearch()">✕</span>
+            </div>
+            <div class="chat-view-messages" id="messages"></div>
+            <div class="chat-view-input">
+                <button class="ch-input-icon" onclick="sendGift()" title="Подарок">🎁</button>
+                <button class="ch-input-icon" onclick="toggleEmoji()" title="Смайлы">😊</button>
+                <input type="text" id="msgInput" placeholder="Сообщение..." onkeydown="if(event.key==='Enter') sendMessage()">
+                <button class="ch-input-icon" onclick="showVoiceUI()" title="Голосовое">🎤</button>
+                <button class="ch-send" onclick="sendMessage()">➤</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ПРАВАЯ ПАНЕЛЬ -->
+    <div class="right-panel hidden" id="rightPanel">
+        <div class="right-tabs">
+            <div class="right-tab active" onclick="switchRightTab('emoji', this)">Эмодзи</div>
+            <div class="right-tab" onclick="switchRightTab('stickers', this)">Стикеры</div>
+            <div class="right-tab" onclick="switchRightTab('gif', this)">GIF</div>
+        </div>
+        <div class="right-search"><input type="text" placeholder="Поиск"></div>
+        <div class="right-content" id="rightContent"></div>
+    </div>
+
+</div>
+
+<!-- МОДАЛКИ -->
+<div class="modal" id="profileModal"><div class="modal-content profile-modal-content">
+    <div class="modal-close" onclick="closeModal('profileModal')">✕</div>
+    <div class="profile-cover"></div>
+    <div class="profile-avatar-big" id="modalAvatar">?</div>
+    <div class="profile-name-big" id="modalName">—</div>
+    <div class="profile-status" id="modalStatus">был(а) недавно</div>
+    <div class="profile-actions-row">
+        <button class="pa-btn" onclick="closeModal('profileModal')">💬 Чат</button>
+        <button class="pa-btn" onclick="alert('Звук')">🔇 Звук</button>
+        <button class="pa-btn" onclick="startCall()">📞 Звонок</button>
+        <button class="pa-btn" onclick="alert('Ещё')">••• Ещё</button>
+    </div>
+    <div class="profile-info">
+        <div class="pi-row"><span>⭐ Звёзды</span><span id="modalStars">0</span></div>
+        <div class="pi-row"><span>🎁 Подарки</span><span id="modalGifts">0</span></div>
+        <div class="pi-row"><span>📅 Регистрация</span><span id="modalDate">—</span></div>
+    </div>
+    <div class="profile-gifts-title">Подарки</div>
+    <div class="profile-gifts" id="modalGiftList"></div>
+    <button class="btn-gift-modal" onclick="sendGiftFromProfile()">🎁 Отправить подарок</button>
+</div></div>
+
+<div class="modal" id="settingsModal"><div class="modal-content settings-modal-content">
+    <div class="settings-header">
+        <div class="settings-back" onclick="closeModal('settingsModal')">←</div>
+        <div class="settings-title">Настройки</div>
+        <div class="settings-icons">🔍 ⋮ ✕</div>
+    </div>
+    <div class="settings-user" onclick="openMyProfile()">
+        <div class="settings-avatar" id="settingsAvatar">?</div>
+        <div><div class="settings-name" id="settingsName">—</div><div class="settings-phone" id="settingsPhone">—</div></div>
+    </div>
+    <div class="settings-item" onclick="openAccountSettings()"><span>👤 Мой аккаунт</span><span class="settings-val">›</span></div>
+    <div class="settings-item" onclick="openNotifSettings()"><span>🔔 Уведомления и звуки</span><span class="settings-val">›</span></div>
+    <div class="settings-item" onclick="openPrivacySettings()"><span>🔒 Конфиденциальность</span><span class="settings-val">›</span></div>
+    <div class="settings-item" onclick="alert('Настройки чатов')"><span>💬 Настройки чатов</span><span class="settings-val">›</span></div>
+    <div class="settings-item" onclick="alert('Папки с чатами')"><span>📁 Папки с чатами</span><span class="settings-val">›</span></div>
+    <div class="settings-item" onclick="alert('Продвинутые настройки')"><span>⚙️ Продвинутые настройки</span><span class="settings-val">›</span></div>
+    <div class="settings-item" onclick="alert('Звук и камера')"><span>🔊 Звук и камера</span><span class="settings-val">›</span></div>
+    <div class="settings-item" onclick="changeLang()"><span>🌐 Язык</span><span class="settings-val" id="langVal">Русский</span></div>
+    <div class="settings-item" onclick="toggleTheme()"><span>🌙 Тёмная тема</span><span class="settings-val" id="themeVal">Вкл</span></div>
+    <div class="settings-item" onclick="openStars()"><span>🌟 Мои звёзды</span><span class="settings-val" id="settingsStars">0</span></div>
+    <div class="settings-item" onclick="sendGift()"><span>🎁 Отправить подарок</span><span class="settings-val">›</span></div>
+    <div class="settings-item" onclick="alert('Premium')"><span>💎 Telegram Premium</span><span class="settings-val">›</span></div>
+    <div class="settings-item" onclick="alert('Бизнес')"><span>💼 Telegram для бизнеса</span><span class="settings-val">›</span></div>
+    <div class="settings-item" onclick="alert('Вопросы')"><span>❓ Вопросы о Telegram</span></div>
+    <div class="settings-item" onclick="alert('Возможности')"><span>💡 Возможности Telegram</span></div>
+    <div class="settings-item" onclick="alert('Задать вопрос')"><span>💬 Задать вопрос</span></div>
+</div></div>
+
+<div class="modal" id="notifSettingsModal"><div class="modal-content">
+    <div class="modal-close" onclick="closeModal('notifSettingsModal')">✕</div>
+    <h2 class="modal-title">Уведомления и звуки</h2>
+    <div class="settings-item"><span>Показывать уведомления</span><label class="switch"><input type="checkbox" checked><span class="slider"></span></label></div>
+    <div class="settings-item"><span>Уведомления на рабочем столе</span><label class="switch"><input type="checkbox" checked><span class="slider"></span></label></div>
+    <div class="settings-item"><span>Анимация иконки на панели задач</span><label class="switch"><input type="checkbox" checked><span class="slider"></span></label></div>
+    <div class="settings-item"><span>Звук</span><label class="switch"><input type="checkbox" checked><span class="slider"></span></label></div>
+    <div class="settings-subtitle">Уведомления из чатов</div>
+    <div class="settings-item"><span>👤 Личные чаты</span><label class="switch"><input type="checkbox" checked><span class="slider"></span></label></div>
+    <div class="settings-item"><span>👥 Группы</span><label class="switch"><input type="checkbox" checked><span class="slider"></span></label></div>
+    <div class="settings-item"><span>📢 Каналы</span><label class="switch"><input type="checkbox" checked><span class="slider"></span></label></div>
+</div></div>
+
+<div class="modal" id="privacySettingsModal"><div class="modal-content">
+    <div class="modal-close" onclick="closeModal('privacySettingsModal')">✕</div>
+    <h2 class="modal-title">Конфиденциальность</h2>
+    <div class="settings-item"><span>Номер телефона</span><span class="settings-val">Никто</span></div>
+    <div class="settings-item"><span>Время захода</span><span class="settings-val">Все</span></div>
+    <div class="settings-item"><span>Фотографии профиля</span><span class="settings-val">Все</span></div>
+    <div class="settings-item"><span>Пересылка сообщений</span><span class="settings-val">Все</span></div>
+    <div class="settings-item"><span>Звонки</span><span class="settings-val">Никто</span></div>
+    <div class="settings-item"><span>Голосовые сообщения</span><span class="settings-val">Мои контакты</span></div>
+    <div class="settings-item"><span>Сообщения</span><span class="settings-val">Все</span></div>
+    <div class="settings-item"><span>День рождения</span><span class="settings-val">Никто</span></div>
+    <div class="settings-item"><span>Подарки</span><span class="settings-val">Все</span></div>
+    <div class="settings-item"><span>О себе</span><span class="settings-val">Все</span></div>
+    <div class="settings-item"><span>Сохранённая музыка</span><span class="settings-val">Все</span></div>
+</div></div>
+
+<div class="modal" id="accountSettingsModal"><div class="modal-content">
+    <div class="modal-close" onclick="closeModal('accountSettingsModal')">✕</div>
+    <h2 class="modal-title">Мой аккаунт</h2>
+    <div class="input-wrap"><input type="text" id="editUsername" placeholder="Имя пользователя" class="auth-input"></div>
+    <div class="input-wrap"><input type="text" id="editBio" placeholder="О себе" class="auth-input"></div>
+    <div class="input-wrap"><input type="text" id="editBirthday" placeholder="День рождения" class="auth-input"></div>
+    <button class="auth-btn" onclick="saveAccount()">Сохранить</button>
+</div></div>
+
+<div class="modal" id="starsModal"><div class="modal-content">
+    <div class="modal-close" onclick="closeModal('starsModal')">✕</div>
+    <div class="stars-hero">
+        <div class="stars-big">⭐</div>
+        <h2 class="stars-title">Звёзды Telegram</h2>
+        <p class="stars-sub">Звёзды нужны для оплаты контента и услуг</p>
+        <button class="btn-topup" onclick="openBuyStars()">➕ Пополнить баланс</button>
+        <div class="stars-balance">Ваш баланс: <b>⭐ <span id="starsBalance">0</span></b></div>
+    </div>
+    <div class="stars-actions">
+        <div class="stars-action">📈 Открыть статистику</div>
+        <div class="stars-action" onclick="openGiftToFriend()">🎁 Подарить звёзды друзьям</div>
+        <div class="stars-action">💡 Заработать звёзды</div>
+    </div>
+    <div class="stars-history-title">Все операции</div>
+    <div class="stars-history" id="starsHistory"></div>
+</div></div>
+
+<div class="modal" id="buyStarsModal"><div class="modal-content">
+    <div class="modal-close" onclick="closeModal('buyStarsModal')">✕</div>
+    <h2 class="modal-title">Выберите количество</h2>
+    <div class="buy-stars-list" id="buyStarsList"></div>
+    <div class="buy-stars-note">Приобретая звёзды, Вы принимаете условия Telegram.</div>
+    <button class="btn-close-modal" onclick="closeModal('buyStarsModal')">Закрыть</button>
+</div></div>
+
+<div class="modal" id="walletModal"><div class="modal-content">
+    <div class="modal-close" onclick="closeModal('walletModal')">✕</div>
+    <h2 class="modal-title">💰 Кошелёк</h2>
+    <div class="wallet-balance">⭐ <span id="walletStars">0</span> звёзд</div>
+    <button class="btn-topup" onclick="openBuyStars()">➕ Пополнить баланс</button>
+</div></div>
+
+<div class="modal" id="nftModal"><div class="modal-content">
+    <div class="modal-close" onclick="closeModal('nftModal')">✕</div>
+    <h2 class="modal-title">🎁 Отправить подарок</h2>
+    <p class="modal-sub">Дарите подарки, которые можно хранить в профиле</p>
+    <div class="nft-tabs"><div class="nft-tab active">Все</div><div class="nft-tab">Коллекционные</div></div>
+    <div class="nft-grid" id="nftGrid"></div>
+</div></div>
+
+<div class="modal" id="newChatModal"><div class="modal-content">
+    <div class="modal-close" onclick="closeModal('newChatModal')">✕</div>
+    <h2 class="modal-title">Новая группа</h2>
+    <div class="new-chat-top"><div class="new-chat-avatar">📷</div><input type="text" id="groupName" placeholder="Название группы"></div>
+    <div class="modal-sub">Выберите участников:</div>
+    <div class="user-picker" id="userPicker"></div>
+    <div class="new-chat-actions"><button class="btn-cancel" onclick="closeModal('newChatModal')">Отмена</button><button class="btn-next" onclick="createGroup()">Создать</button></div>
+</div></div>
+
+<div class="modal" id="newChannelModal"><div class="modal-content">
+    <div class="modal-close" onclick="closeModal('newChannelModal')">✕</div>
+    <h2 class="modal-title">Новый канал</h2>
+    <div class="new-chat-top"><div class="new-chat-avatar">📷</div><input type="text" id="channelName" placeholder="Название канала"></div>
+    <div class="new-chat-desc"><input type="text" id="channelDesc" placeholder="Описание (необязательно)"></div>
+    <div class="new-chat-actions"><button class="btn-cancel" onclick="closeModal('newChannelModal')">Отмена</button><button class="btn-next" onclick="createChannel()">Создать</button></div>
+</div></div>
+
+<div class="modal" id="voiceModal"><div class="modal-content" style="text-align:center;">
+    <div class="voice-wave"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+    <div class="voice-time" id="voiceTime">00:00</div>
+    <button class="voice-cancel" onclick="cancelVoice()">✕</button>
+    <button class="voice-send" onclick="sendVoice()">➤</button>
+</div></div>
+
+<div class="modal" id="callModal"><div class="modal-content" style="text-align:center;">
+    <div class="call-avatar" id="callAvatar">?</div>
+    <h2 class="modal-title" id="callName">Звонок</h2>
+    <p class="modal-sub" id="callStatus">Вызов...</p>
+    <div style="display:flex;justify-content:center;gap:16px;margin-top:24px;">
+        <button class="voice-cancel" onclick="endCall()" style="width:64px;height:64px;">📞</button>
+        <button class="voice-send" onclick="alert('Микрофон')" style="width:64px;height:64px;">🎤</button>
+    </div>
+</div></div>
+
+<script src="renderer.js"></script>
+</body>
+</html>
